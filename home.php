@@ -56,7 +56,7 @@
 			<button class="btn btn-success">Login</button>
 		</div>-->
 
-		<div class="container">
+		<div class="container" id="cont">
 			<h1>Our products</h1>
 			<?php 
 
@@ -77,7 +77,7 @@
 	    	}
 	        ?>
 	        <div class="clearfix"></div>
-            <a onclick="getMore()">load more</a>
+            <a onclick="getMore()" id="getMore">load more</a>
 		</div>
 
 		<div class="footer">
@@ -87,7 +87,24 @@
 		</div>
 <script>
     function getMore() {
-        $()
+        for(var i=0 ; i<10 ; i++){
+            $("#cont").append("<div class='card'>           " +
+                " <div class='front'>              " +
+                "  <header>                  " +
+                "  <img src='images/creepy-cat.jpg' alt='product img' />     " +
+                "           </header>            " +
+                "    <h3>Product Name</h3>        " +
+                "        <p>Lorem ipsum dolor sit amet, " +
+                "consectetur adipiscing elit, sed do" +
+                " eiusmod tempor incididunt ut labore" +
+                " et dolore magna aliqua.</p>" +
+                "            </div>      " +
+                "      <div class='back'>    " +
+                "          <button class='btn btn-success'>Buy</button>" +
+                "           </div> " +
+                "  </div>");
+        }
+        $("#getMore").hide();
     }
 </script>
 </body>
