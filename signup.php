@@ -21,12 +21,8 @@
 		<input name="Password" placeholder="Enter Password..."></textarea><br>
 		<span>Email:</span><br>
 		<input name="email" placeholder="Enter Email..."></textarea><br>
-		<span>Profile Photo:</span><br>
-		<input name="photo" placeholder="Enter Path here..."></textarea><br>
-		<span>gender:</span><br>
-		<select name="gender">
-		<option>Male</option>
-		<option>Female</option>
+		<span>Profile image:</span><br>
+		<input name="file" type="file" placeholder="Enter Path here..."></textarea><br>
 		</select><br>
 		<button>Sign Up</button>
 	</form>
