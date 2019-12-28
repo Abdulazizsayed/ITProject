@@ -57,6 +57,8 @@
 		</div>-->
 
 		<div class="container" id="cont">
+
+		<div class="container">
 			<h1>Our products</h1>
 			<?php 
 
@@ -78,6 +80,7 @@
 	        ?>
 	        <div class="clearfix"></div>
             <a onclick="getMore()" id="getMore">load more</a>
+
 		</div>
 
 		<div class="footer">
@@ -85,6 +88,7 @@
 			&copy; Copyright reserved.
 		</div>
 		</div>
+
 <script>
     function getMore() {
         for(var i=0 ; i<10 ; i++){
@@ -107,5 +111,6 @@
         $("#getMore").hide();
     }
 </script>
+
 </body>
 </html>
