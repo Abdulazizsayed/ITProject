@@ -14,17 +14,16 @@
 	<title>signup</title>
 </head>
 <body>
-	<form action="#" method="Post">
+	<form action="saveSignupData.php" method="Post" enctype="multipart/form-data">
 		<span>Username:</span><br>
-		<input name="username" placeholder="Enter Username..."></textarea><br>
+		<input name="username" placeholder="Enter Username..."><br>
 		<span>Password:</span><br>
-		<input name="Password" placeholder="Enter Password..."></textarea><br>
+		<input name="password" type="password" placeholder="Enter Password..."><br>
 		<span>Email:</span><br>
-		<input name="email" placeholder="Enter Email..."></textarea><br>
+		<input name="email" type="email" placeholder="Enter Email..."><br>
 		<span>Profile image:</span><br>
-		<input name="file" type="file" placeholder="Enter Path here..."></textarea><br>
-		</select><br>
-		<button>Sign Up</button>
+		<input name="file" type="file"><br>
+		<button type="submit" name="submit">Sign Up</button>
 	</form>
 </body>
 </html>
