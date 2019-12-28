@@ -1,3 +1,7 @@
+<?php
+// Start the session
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,8 +18,7 @@
 	<title>signup</title>
 </head>
 <body>
-	<form action="#" method="Post">
-		
+	<form action="loginPhP.php" method="post">
 		<span>Email:</span><br>
 		<input name="email" placeholder="Enter Email..."></textarea><br>
 		<span>Password:</span><br>
