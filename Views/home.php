@@ -12,6 +12,7 @@
 			header("location:main.php?page=login");
 		}
 	}*/
+    include connection.php;
 ?>
 
 <!--<ul class="nav navbar-nav"> navbar
@@ -23,15 +24,15 @@
 <html>
 <head>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">
 
 	<!-- jQuery library -->
-	<script src="js/jquery.min.js"></script>
+	<script src="../js/jquery.min.js"></script>
 
 	<!-- Latest compiled JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
 	
 	<title>itp</title>
 </head>
@@ -66,7 +67,7 @@
 				echo "<div class='card'>
 		            <div class='front'>
 		                <header>
-		                    <img src='images/creepy-cat.jpg' alt='product img' />
+		                    <img src='../images/creepy-cat.jpg' alt='product img' />
 		                </header>
 		                <h3>Product Name</h3>
 		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -95,7 +96,7 @@
             $("#cont").append("<div class='card'>           " +
                 " <div class='front'>              " +
                 "  <header>                  " +
-                "  <img src='images/creepy-cat.jpg' alt='product img' />     " +
+                "  <img src='../images/creepy-cat.jpg' alt='product img' />     " +
                 "           </header>            " +
                 "    <h3>Product Name</h3>        " +
                 "        <p>Lorem ipsum dolor sit amet, " +
