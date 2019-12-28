@@ -2,16 +2,16 @@
 <html>
 <head>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/profileStyle.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/profileStyle.css">
 
 	<!-- jQuery library -->
-	<script src="js/jquery.min.js"></script>
+	<script src="../js/jquery.min.js"></script>
 
 	<!-- Latest compiled JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
 
 	<title>profile</title>
 </head>
@@ -34,7 +34,7 @@
 		<div class="user-details">
 			<div class="container">
 				<div class="img">
-					<img src="images/creepy-cat.jpg" alt="profile photo" />
+					<img src="../images/creepy-cat.jpg" alt="profile photo" />
 				</div>
 				<h1>User name</h1>
 			</div>
@@ -49,7 +49,7 @@
 				echo "<div class='card'>
 		            <div class='front'>
 		                <header>
-		                    <img src='images/creepy-cat.jpg' alt='product img' />
+		                    <img src='../images/creepy-cat.jpg' alt='product img' />
 		                </header>
 		                <h3>Product Name</h3>
 		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

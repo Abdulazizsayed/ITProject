@@ -6,19 +6,19 @@ session_start();
 <html>
 <head>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">
 
 	<!-- jQuery library -->
-	<script src="js/jquery.min.js"></script>
+	<script src="../js/jquery.min.js"></script>
 
 	<!-- Latest compiled JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
 	<title>signup</title>
 </head>
 <body>
-	<form action="loginPhP.php" method="post">
+	<form action="../Controllers/LoginController.php" method="post">
 		<span>Email:</span><br>
 		<input name="email" placeholder="Enter Email..."></textarea><br>
 		<span>Password:</span><br>
