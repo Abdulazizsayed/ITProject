@@ -110,6 +110,7 @@
         }
         $("#getMore").hide();
     }
+    function salah(){}
 </script>
 
 </body>
