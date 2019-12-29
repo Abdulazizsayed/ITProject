@@ -15,6 +15,11 @@
 
 	include "../Models/User.php";
 	session_start();
+
+	if(isset($_GET['loggedOut'])){
+		session_destroy();
+		header("Location: http://localhost:8080/PHPWork/ITProject/Views/HomeView.php");
+	}
 ?>
 
 <!--<ul class="nav navbar-nav"> navbar
@@ -49,12 +54,18 @@
 						<?php 
 							if(isset($_SESSION['user'])){
 								echo "
-										<li><span style='font-size:20px;color:#FFF;position:absolute;left:-60px;width:300px'>Hello ".$_SESSION['user']->name."</li>
+										<li>
+											<span style='font-size:20px;color:#FFF;position:absolute;top:15px;left:-500px;width:300px'>Hello: ".$_SESSION['user']->name."
+												<a href='http://localhost:8080/PHPWork/ITProject/Views/HomeView.php?loggedOut=1'>
+													<button class='btn btn-danger' style='margin-left:20px;'>Logout</button>
+												</a>
+											</span>
+										</li>
 										<li class='active'><a href='#'>Home</a></li>
 										<li><a href='#'>My profile</a></li>
 									";
-							}else{echo "<li><a href='#'><button class='btn btn-primary'>Sign Up</button></a></li>
-									<li><a href='#'><button class='btn btn-success'>Login</button></a></li>";
+							}else{echo "<li><a href='http://localhost:8080/PHPWork/ITProject/Views/SignUpView.php'><button class='btn btn-primary'>Sign Up</button></a></li>
+									<li><a href='http://localhost:8080/PHPWork/ITProject/Views/LoginView.php'><button class='btn btn-success'>Login</button></a></li>";
 								}
 						?>
 					</ul>
