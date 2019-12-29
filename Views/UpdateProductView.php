@@ -93,21 +93,20 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="../js/bootstrap.min.js"></script>
-	<title>signup</title>
+	<title>update existed product</title>
 </head>
 <body>
-	<form class="form" action="http://localhost:8080/PHPWork/ITProject/Controllers/SignUpConroller.php" method="Post" enctype="multipart/form-data">
-		<span>Username:</span><br>
-		<input name="username" placeholder="Enter Username..."><br>
-		<span>Password:</span><br>
-		<input name="password" type="password" placeholder="Enter Password..."><br>
-		<span>Email:</span><br>
-        <?php if(isset($_GET['emailExist']))echo '<p style="color:red">email already exists</p>'?>
-		<input name="email" type="email" placeholder="Enter Email..."><br>
-        <span>Profile image:</span><br>
-		<input name="file" type="file"><br>
-        <?php if(isset($_GET['errorUploading']))echo '<p style="color:red">error with uploading the file</p>'?>
-        <button type="submit" name="submit">Sign Up</button>
-	</form>
+	<form class="form" action="../Controllers/LoginController.php" method="post">
+		<span>Product name:</span><br>
+		<input name="name" placeholder="Enter name..."><br>
+        <span>Description:</span><br>
+		<textarea name="des" placeholder="Enter Description..."></textarea><br>
+		<span>Quantity:</span><br>
+		<input name="quantity" type="number" placeholder="Enter quantity..."><br>
+		<span>Price:</span><br>
+		<input name="price" type="number" placeholder="Enter price..."><br>
+		<input name="id" style="display: none" value="1">
+		<button>Add</button>
+    </form>
 </body>
 </html>
