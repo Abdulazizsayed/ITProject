@@ -14,7 +14,7 @@
 	<title>signup</title>
 </head>
 <body>
-	<form action="../Controllers/SignUpConroller.php" method="Post" enctype="multipart/form-data">
+	<form action="http://localhost:8080/PHPWork/ITProject/Controllers/SignUpConroller.php" method="Post" enctype="multipart/form-data">
 		<span>Username:</span><br>
 		<input name="username" placeholder="Enter Username..."><br>
 		<span>Password:</span><br>

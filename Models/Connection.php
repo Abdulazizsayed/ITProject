@@ -2,7 +2,7 @@
 	class Connection
 	{
     static $link;
-	public static function connect($host, $user, $pass, $database)
+	public static function connect($host="localhost", $user="root", $pass="", $database="itproject")
 		{
             Connection::$link = new mysqli($host,$user,$pass,$database);
 			if (mysqli_connect_error())
