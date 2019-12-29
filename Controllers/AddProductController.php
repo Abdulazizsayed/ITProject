@@ -13,4 +13,4 @@ $product->price=$_POST['price'];
 $product->quantity=$_POST['quantity'];
 $product->image=$_POST['image'];
 $product->save();
-header("http://localhost/ITProject-master/Views/UpdateProductsView.php");
+header("Location: http://localhost/ITProject-master/Views/UpdateProductsView.php");

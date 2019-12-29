@@ -7,11 +7,11 @@
  */
 include '../Models/Product.php';
 $product=new Product();
-$id=$_POST['id'];
+$product->id=$_POST['id'];
 $product->name=$_POST['name'];
-$product->des=$_POST['desc'];
+$product->des=$_POST['des'];
 $product->price=$_POST['price'];
 $product->quantity=$_POST['quantity'];
 $product->update();
-header("http://localhost/ITProject-master/Views/UpdateProductsView.php");
+header("Location: http://localhost/ITProject-master/Views/UpdateProductsView.php");
 

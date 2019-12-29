@@ -105,8 +105,8 @@
 		<input name="quantity" type="number" placeholder="Enter quantity..."><br>
 		<span>Price:</span><br>
 		<input name="price" type="number" placeholder="Enter price..."><br>
-		<input name="id" style="display: none" value="1">
-		<button>Add</button>
+		<input name="id" style="display: none" value="<?php echo $_GET['id']?>">
+		<button>Update</button>
     </form>
 </body>
 </html>

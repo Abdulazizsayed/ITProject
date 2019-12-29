@@ -144,7 +144,7 @@ body{
 <body>
 	<div class="container">	
 		<h1>Website products</h1>
-		<a href="#">
+		<a href="http://localhost/ITProject-master/Views/AddNewProductView.php">
 			<button class="btn btn-success" style="margin: auto;display: block;font-size: 20px; margin-bottom: 130px">Add new product</button>
 		</a>
 	<?php
@@ -155,7 +155,7 @@ body{
 				echo "<div class='card'>
 		            <div class='front'>
 		                <header>
-		                    <img src='../images/creepy-cat.jpg' alt='product img' />
+		                    <img src='<?php echo $product->image ?>' alt='product img' />
 		                </header>
 		                <h3>$product->name</h3>
 		                <p>$product->des</p>
@@ -165,7 +165,7 @@ body{
 		                <input name=\"id\" style=\"display: none\" value=\"$product->id\">
 		                <button class='btn btn-success'>delete</button><br/>
                     </form>
-		            	<form method='post' action='UpdateProductView.php'>
+		            	<form method='post' action='http://localhost/ITProject-master/Views/UpdateProductView.php?id=$product->id'>
 			                <button class='btn btn-primary'>Update</button>
 			            </form>
 		            </div>
