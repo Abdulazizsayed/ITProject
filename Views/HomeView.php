@@ -12,7 +12,6 @@
 			header("location:main.php?page=login");
 		}
 	}*/
-    include connection.php;
 ?>
 
 <!--<ul class="nav navbar-nav"> navbar
