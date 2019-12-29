@@ -15,7 +15,7 @@
 	<title>signup</title>
 </head>
 <body>
-	<form action="../Controllers/LoginController.php" method="post">
+	<form class="form" action="../Controllers/LoginController.php" method="post">
 		<span>Email:</span><br>
 		<input name="email" placeholder="Enter Email..."></textarea><br>
         <span>Password:</span><br>

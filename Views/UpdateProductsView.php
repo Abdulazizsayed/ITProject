@@ -17,6 +17,9 @@
 <body>
 	<div class="container">	
 		<h1>Website products</h1>
+		<a href="#">
+			<button class="btn btn-success" style="margin: auto;display: block;font-size: 20px; margin-bottom: 130px">Add new product</button>
+		</a>
 	<?php 
 		for($i = 0 ; $i<6 ; $i++){
 				echo "<div class='card'>
@@ -28,8 +31,10 @@
 		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 		            </div>
 		            <div class='back'>
-		                <button class='btn btn-success'>delete</button><br />
-		                <button class='btn btn-primary'>Update</button>
+		            	<form method='post'>
+			                <button class='btn btn-success'>delete</button><br />
+			                <button class='btn btn-primary'>Update</button>
+			            </form>
 		            </div>
 		        </div>";
 				
