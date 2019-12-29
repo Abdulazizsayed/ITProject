@@ -27,7 +27,8 @@ class Purchase
             $purchase->userId=$userId;
             $purchase->productId=$row['productId'];
             $purchase->quantity=$row['quantity'];
+            array_push($res,$purchase);
         }
-
+        return $res;
     }
 }
