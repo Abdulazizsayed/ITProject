@@ -9,7 +9,7 @@ include "../Models/User.php";
 	$email = $_POST['email'];
 	// if this email is already registered
     if(User::isEmailExist($email)){
-        header("Location: http://localhost/ITProject-master/Views/SignUpView.php?emailExist=1");
+        header("Location: http://localhost:8080/PHPWork/ITProject/Views/SignUpView.php?emailExist=1");
     }else {
         $user = new User();
         $user->email = $email;
@@ -18,7 +18,7 @@ include "../Models/User.php";
         $user->image = getFileDestination($_FILES['file']);
         $user->save();
         $_SESSION["user"]=$user;
-        header("Location: http://localhost/ITProject-master/Views/HomeView.php");
+        header("Location: http://localhost:8080/PHPWork/ITProject/Views/HomeView.php");
     }
 
 ?>
