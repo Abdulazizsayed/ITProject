@@ -49,7 +49,7 @@
 						<?php 
 							if(isset($_SESSION['user'])){
 								echo "
-										<li><span style='font-size:20px;color:#FFF;position:absolute;left:-60px'>Hello ".$_SESSION['user']->name."</li>
+										<li><span style='font-size:20px;color:#FFF;position:absolute;left:-60px;width:300px'>Hello ".$_SESSION['user']->name."</li>
 										<li class='active'><a href='#'>Home</a></li>
 										<li><a href='#'>My profile</a></li>
 									";
