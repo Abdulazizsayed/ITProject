@@ -95,7 +95,11 @@
 		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 		            </div>
 		            <div class='back'>
-		                <button class='btn btn-success'>Buy</button>
+		            	<form method='post'>
+			            	<label for='quantity'>Quantity</label><br>
+			            	<input name='quantity' type='number' required><br>
+			                <button class='btn btn-success'>Buy</button>
+			            </form>
 		            </div>
 		        </div>";
 				
