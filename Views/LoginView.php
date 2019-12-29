@@ -1,7 +1,3 @@
-<?php
-// Start the session
-session_start();
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,9 +17,11 @@ session_start();
 	<form action="../Controllers/LoginController.php" method="post">
 		<span>Email:</span><br>
 		<input name="email" placeholder="Enter Email..."></textarea><br>
-		<span>Password:</span><br>
-		<input name="Password" placeholder="Enter Password..."></textarea><br>
+        <span>Password:</span><br>
+		<input name="password" type="password" placeholder="Enter Password..."></textarea><br>
 		<button>Login</button>
-	</form>
+
+        <?php if(isset($_GET['error']))echo 'wrong email or password'?>
+    </form>
 </body>
 </html>
