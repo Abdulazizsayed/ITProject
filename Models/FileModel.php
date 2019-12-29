@@ -19,13 +19,13 @@ function getFileDestination($file){
 				move_uploaded_file($fileTmpName, $fileDestination);
 				return $fileDestination;
 			}else{
-				echo "<span class='error'>Your file is too big!</span>";
-			}
+                header("Location: http://localhost/ITProject-master/Views/SignUpView.php?errorUploading=1");
+            }
 		}else{
-			echo "<span class='error'>there is an error uploading your file!</span>";
+            header("Location: http://localhost/ITProject-master/Views/SignUpView.php?errorUploading=1");
 		}
 	}else{
-		echo "<span class='error'>You cannot upload files of this type!</span>";
+        header("Location: http://localhost/ITProject-master/Views/SignUpView.php?errorUploading=1");
 	}
 }
 

@@ -11,6 +11,7 @@ class User
     public $name;
     public $email;
     public $image;
+    public $password;
     public $id;
     public static function Login($email,$password){
         $user=new User();
@@ -34,5 +35,18 @@ class User
         }
         if(!$found)return null;
         return $user;
+    }
+    public static function isEmailExist($email){
+        $link=Connection::connect();
+        $query="select * from users where email='".$email."'";
+        $data=mysqli_query($link,$query);
+        if($data->num_rows>0)return true;
+        return false;
+    }
+    public function save(){
+        $con = Connection::connect();
+
+        $sql = "INSERT INTO users(`name`, `password`, `email`, `image`) VALUES('".$this->name."', '".$this->password."', '".$this->email."', '".$this->image."')";
+        mysqli_query($con, $sql);
     }
 }
