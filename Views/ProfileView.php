@@ -27,7 +27,7 @@ session_start();
 						<span class="navbar-brand">ASA</span>
 					</div>
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="http://localhost/ITProject-master/Views/HomeView.php">Home</a></li>
+						<li class="active"><a href="http://localhost:8080/PHPWork/ITProject/Views/HomeView.php">Home</a></li>
 						<li><a href="#">My profile</a></li>
 					</ul>
 					<div class="clearfix"></div>
@@ -38,7 +38,7 @@ session_start();
 		<div class="user-details">
 			<div class="container">
 				<div class="img">
-					<img src="../images/creepy-cat.jpg" alt="profile photo" />
+					<img src='<?php echo($_SESSION["user"]->image) ?>' alt="profile photo" />
 				</div>
 				<h1><?php echo $_SESSION["user"]->name?></h1>
 			</div>
@@ -57,7 +57,7 @@ session_start();
 				echo "<div class='card'>
 		            <div class='front'>
 		                <header>
-		                    <img src='<?php echo $product->image?>' alt='product img' />
+		                    <img src='".$product->image."' alt='product img' />
 		                </header>
 		                <h3>$product->name</h3>
 		                <p>$product->des</p>

@@ -112,8 +112,6 @@
 		}
 
 		.card .front p{
-
-		.card .front p{
 		    width: 90%;
 		    margin: 30px auto;
 		}
@@ -153,15 +151,6 @@
 
 		.navbar.navbar-inverse{
 			margin-bottom: 0;
-		}
-
-		.signupOrLogin{
-			text-align: center;
-			background: gray;
-			width: 50%;
-			margin: auto;
-			border-radius: 10px;
-			padding: 20px;
 		}
 
 		.signupOrLogin button{
@@ -204,10 +193,10 @@
 											</span>
 										</li>
 										<li class='active'><a href='#'>Home</a></li>
-										<li><a href='http://localhost/ITProject-master/Views/ProfileView.php'>My profile</a></li>
+										<li><a href='http://localhost:8080/PHPWork/ITProject/Views/Views/ProfileView.php'>My profile</a></li>
 									";
-							}else{echo "<li><a href='http://localhost/ITProject-master/Views/SignUpView.php'><button class='btn btn-primary'>Sign Up</button></a></li>
-									<li><a href='http://localhost/ITProject-master/Views/LoginView.php'><button class='btn btn-success'>Login</button></a></li>";
+							}else{echo "<li><a href='http://localhost:8080/PHPWork/ITProject/Views/SignUpView.php'><button class='btn btn-primary'>Sign Up</button></a></li>
+									<li><a href='http://localhost:8080/PHPWork/ITProject/Views/LoginView.php'><button class='btn btn-success'>Login</button></a></li>";
 								}
 						?>
 					</ul>
@@ -232,25 +221,26 @@
 			    $product=$products[$i];
 			    // don't show products with no quantity
 			    if($product->quantity==0)continue;
-				echo "<div class='card'>
-		            <div class='front'>
-		                <header>
-		                    <img src='<?php echo $product->image ?>' alt='product img' />
-		                </header>
-		                <h3>$product->name</h3>
-		                <p>$product->des</p>
-		                <p>available quantity:$product->quantity</p>
-		            </div>
-		            <div class='back'>
-		            	<form method='post'>
-			            	<label for='quantity'>Quantity</label><br>
-			            	<input name='quantity' type='number' required><br>
-			                <button class='btn btn-success'>Buy</button>
-			            </form>
-		            </div>
-		        </div>";
-				
-	    	}
+					echo "<div class='card'>
+			            <div class='front'>
+			                <header>
+			                    <img src='<?php echo $product->image ?>' alt='product img' />
+			                </header>
+			                <h3>$product->name</h3>
+			                <p>$product->des</p>
+			                <p>available quantity:$product->quantity</p>
+			            </div>
+			            <div class='back'>
+			            	<form action='http://localhost:8080/PHPWork/ITProject/Controllers/BuyController.php' method='post'>
+				            	<label for='quantity'>Quantity</label><br>
+				            	<input name='quantity' type='number' required><br>
+				            	<input name='id' value='".$product->id."' style='display:none'>
+				                <button class='btn btn-success'>Buy</button>
+				            </form>
+			            </div>
+			        </div>";
+					
+		    	}
 	        ?>
 	        <div class="clearfix"></div>
 

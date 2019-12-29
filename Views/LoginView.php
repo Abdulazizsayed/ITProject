@@ -98,7 +98,7 @@
 	<title>signup</title>
 </head>
 <body>
-	<form class="form" action="../Controllers/LoginController.php" method="post">
+	<form class="form" action="http://localhost:8080/PHPWork/ITProject/Controllers/LoginController.php" method="post">
 		<span>Email:</span><br>
 		<input name="email" placeholder="Enter Email..."><br>
         <span>Password:</span><br>
