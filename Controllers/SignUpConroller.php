@@ -5,34 +5,18 @@ if(isset($_POST['submit'])){
 	$password = $_POST['password'];
 	$email = $_POST['email'];
 
-	$file = $_FILES['file'];
+	include "../Models/FileModel.php";
 
-	$fileName = $_FILES['file']['name'];
-	$fileTmpName = $_FILES['file']['tmp_name'];
-	$fileSize = $_FILES['file']['size'];
-	$fileError = $_FILES['file']['error'];
-	$fileType = $_FILES['file']['type'];
+	$fileDestination = getFileDestination($_FILES['file']);
 
-	$fileExt = explode('.', $fileName);	//Extension
-	$fileActualExt = strtolower(end($fileExt));
+	include "../Models/Connection.php";
 
-	$allowed = array('jpg', 'jpeg', 'png');
-	if(in_array($fileActualExt, $allowed)){
-		if($fileError === 0){
-			if($fileSize < 1000000){
-				$fileNameNew = uniqid('', true).'.'.$fileActualExt;
-				$fileDestination = '../uplodedImages'.$fileNameNew;
-				move_uploaded_file($fileTmpName, $fileDestination);
-				echo "helloWrold";
-				header("Location: SignUpView.php");
-			}else{
-				echo "<span class='error'>Your file is too big!</span>";
-			}
-		}else{
-			echo "<span class='error'>there is an error uploading your file!</span>";
-		}
-	}else{
-		echo "<span class='error'>You cannot upload files of this type!</span>";
-	}
+	$con = Connection::connect("localhost", "root", "", "itproject");
+
+	$sql = "INSERT INTO users(`name`, `password`, `email`, `image`) VALUES('".$username."', '".$password."', '".$email."', '".$fileDestination."')";
+
+	mysqli_query($con, $sql);
+
+	header("Location: http://localhost:8080/PHPWork/ITProject/Views/SignUpView.php");
 }
 ?>
