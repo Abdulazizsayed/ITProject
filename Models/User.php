@@ -14,8 +14,9 @@ class User
     public $id;
     public static function Login($email,$password){
         $link = Connection::connect("localhost", "root", "", "itproject");
+        if($link==false)die('died');
         $data=$link->query("select * from users where email=".$email);
-        echo 'zizo';
+
         if($data->num_rows==0)return null;
         $user=new User();
         $found=false;
