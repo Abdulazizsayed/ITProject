@@ -17,9 +17,9 @@
 <body>
 	<form class="form" action="../Controllers/LoginController.php" method="post">
 		<span>Email:</span><br>
-		<input name="email" placeholder="Enter Email..."></textarea><br>
+		<input name="email" placeholder="Enter Email..."><br>
         <span>Password:</span><br>
-		<input name="password" type="password" placeholder="Enter Password..."></textarea><br>
+		<input name="password" type="password" placeholder="Enter Password..."><br>
 		<button>Login</button>
 
         <?php if(isset($_GET['error']))echo '<p style="color:red;display:inline">wrong email or password</p>'?>
