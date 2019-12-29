@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="258b6755-a84e-4e46-b613-312707362b26" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/SignUpConroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/SignUpConroller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/FileModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/FileModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Image.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/SignUpView.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/SignUpView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uplodedImages/5e07f327eb7160.79773198.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uplodedImages/5e07f37862cef3.36873902.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uplodedImages/5e07f672a373b8.29696536.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uplodedImages/5e07f720222449.64245847.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uplodedImages/5e07f780a084e7.50722952.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uplodedImages/5e07f8641cc7e8.61243135.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uplodedImages/5e07f902c23d96.22800930.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uplodedImages/5e07fbab3b86b8.52654416.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uplodedImages/5e07fbd96d5614.41088315.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uplodedImages/5e07fc4801ca70.25893130.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,55 +42,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Image.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Models/Image.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Controllers/LoginController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+            <state relative-caret-position="380">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="file.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ITtask2/file.php">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="FileModel.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Models/FileModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="SignUpView.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/SignUpView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignUpConroller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/SignUpConroller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-52" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Connection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Models/Connection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+            <state relative-caret-position="308">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -104,8 +89,11 @@
         <option value="$PROJECT_DIR$/Views/HomeView.php" />
         <option value="$PROJECT_DIR$/Views/LoginView.php" />
         <option value="$PROJECT_DIR$/Models/Connection.php" />
-        <option value="$PROJECT_DIR$/Models/User.php" />
         <option value="$PROJECT_DIR$/Controllers/LoginController.php" />
+        <option value="$PROJECT_DIR$/Controllers/SignUpConroller.php" />
+        <option value="$PROJECT_DIR$/Models/User.php" />
+        <option value="$PROJECT_DIR$/Views/SignUpView.php" />
+        <option value="$PROJECT_DIR$/Models/FileModel.php" />
       </list>
     </option>
   </component>
@@ -196,12 +184,12 @@
       <option name="presentableId" value="Default" />
       <updated>1577565682570</updated>
       <workItem from="1577565684634" duration="237000" />
-      <workItem from="1577573347206" duration="8025000" />
+      <workItem from="1577573347206" duration="11872000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8262000" />
+    <option name="totallyTimeSpent" value="12109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="741" extended-state="0" />
@@ -264,9 +252,6 @@
     <entry file="file://$PROJECT_DIR$/Views/LoginView.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/Image.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/uplodedImages5e07f0f2a71a34.70628838.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -285,13 +270,6 @@
     <entry file="file://$PROJECT_DIR$/signup.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/SignUpView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ITtask2/file.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -302,22 +280,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/SignUpConroller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-52" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Models/Image.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        <state relative-caret-position="24">
+          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/creepy-cat.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/SignUpConroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uplodedImages/5e07fc4801ca70.25893130.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uplodedImages/5e07fbd96d5614.41088315.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uplodedImages/5e07fbab3b86b8.52654416.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uplodedImages/5e07f720222449.64245847.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uplodedImages/5e07f37862cef3.36873902.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uplodedImages/5e07f8641cc7e8.61243135.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uplodedImages/5e07f902c23d96.22800930.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uplodedImages/5e07f780a084e7.50722952.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uplodedImages/5e07f672a373b8.29696536.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uplodedImages/5e07f327eb7160.79773198.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/SignUpView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/FileModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

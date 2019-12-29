@@ -1,22 +1,24 @@
-<?php 
+<?php
+session_start();
 
-if(isset($_POST['submit'])){
+include "../Models/FileModel.php";
+include "../Models/User.php";
+
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	$email = $_POST['email'];
+	// if this email is already registered
+    if(User::isEmailExist($email)){
+        header("Location: http://localhost/ITProject-master/Views/SignUpView.php?emailExist=1");
+    }else {
+        $user = new User();
+        $user->email = $email;
+        $user->password = $password;
+        $user->name = $username;
+        $user->image = getFileDestination($_FILES['file']);
+        $user->save();
+        $_SESSION["user"]=$user;
+        header("Location: http://localhost/ITProject-master/Views/HomeView.php");
+    }
 
-	include "../Models/FileModel.php";
-
-	$fileDestination = getFileDestination($_FILES['file']);
-
-	include "../Models/Connection.php";
-
-	$con = Connection::connect("localhost", "root", "", "itproject");
-
-	$sql = "INSERT INTO users(`name`, `password`, `email`, `image`) VALUES('".$username."', '".$password."', '".$email."', '".$fileDestination."')";
-
-	mysqli_query($con, $sql);
-
-	header("Location: http://localhost:8080/PHPWork/ITProject/Views/SignUpView.php");
-}
 ?>
