@@ -96,7 +96,7 @@
 	<title>update existed product</title>
 </head>
 <body>
-	<form class="form" action="../Controllers/LoginController.php" method="post">
+	<form class="form" action="../Controllers/UpdateProductController.php" method="post">
 		<span>Product name:</span><br>
 		<input name="name" placeholder="Enter name..."><br>
         <span>Description:</span><br>

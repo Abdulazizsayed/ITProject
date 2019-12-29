@@ -147,19 +147,25 @@ body{
 		<a href="#">
 			<button class="btn btn-success" style="margin: auto;display: block;font-size: 20px; margin-bottom: 130px">Add new product</button>
 		</a>
-	<?php 
-		for($i = 0 ; $i<6 ; $i++){
+	<?php
+    include "../Models/Product.php";
+    $products=Product::getAllProducts();
+    for($i = 0 ; $i<sizeof($products) ; $i++){
+        $product=$products[$i];
 				echo "<div class='card'>
 		            <div class='front'>
 		                <header>
 		                    <img src='../images/creepy-cat.jpg' alt='product img' />
 		                </header>
-		                <h3>Product Name</h3>
-		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		                <h3>$product->name</h3>
+		                <p>$product->des</p>
 		            </div>
 		            <div class='back'>
-		            	<form method='post'>
-			                <button class='btn btn-success'>delete</button><br />
+		            <form method='post' action='../Controllers/DeleteProduct.php'>
+		                <input name=\"id\" style=\"display: none\" value=\"$product->id\">
+		                <button class='btn btn-success'>delete</button><br/>
+                    </form>
+		            	<form method='post' action='UpdateProductView.php'>
 			                <button class='btn btn-primary'>Update</button>
 			            </form>
 		            </div>

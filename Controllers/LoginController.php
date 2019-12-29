@@ -6,6 +6,9 @@ if(!isset($user)){
     header("Location: http://localhost/ITProject-master/Views/LoginView.php?error=1");
 }else {
     $_SESSION['user'] = $user;
-    header("Location: http://localhost/ITProject-master/Views/HomeView.php");
-}
+    if($user->email=="admin@admin.com"){
+        header("Location: http://localhost/ITProject-master/Views/UpdateProductsView.php");
+    }else{
+        header("Location: http://localhost/ITProject-master/Views/HomeView.php");
+}   }
 ?>
