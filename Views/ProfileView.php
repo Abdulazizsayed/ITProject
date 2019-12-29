@@ -16,6 +16,10 @@
 	<title>profile</title>
 </head>
 <body>
+<?php
+include '../Models/User.php';
+session_start();
+?>
 	<div class="navbar navbar-inverse">
 			<div class="container-fluid">
 				<div class="container">
@@ -36,7 +40,7 @@
 				<div class="img">
 					<img src="../images/creepy-cat.jpg" alt="profile photo" />
 				</div>
-				<h1>User name</h1>
+				<h1><?php echo $_SESSION["user"]->name?></h1>
 			</div>
 			<div class="clearfix"></div>
 		</div>
