@@ -27,7 +27,7 @@ session_start();
 						<span class="navbar-brand">ASA</span>
 					</div>
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
+						<li class="active"><a href="http://localhost/ITProject-master/Views/HomeView.php">Home</a></li>
 						<li><a href="#">My profile</a></li>
 					</ul>
 					<div class="clearfix"></div>
@@ -48,15 +48,20 @@ session_start();
 		<div class="container">
 			<hr />	
 			<h1>My products</h1>
-		<?php 
-			for($i = 0 ; $i<6 ; $i++){
+		<?php
+            include_once '../Models/Purchase.php';
+            include_once '../Models/Product.php';
+            $purchases=Purchase::getPurchasesForUser($_SESSION['user']->id);
+			for($i = 0 ; $i<sizeof($purchases) ; $i++){
+			    $product=Product::getProductById($purchases[$i]->productId);
 				echo "<div class='card'>
 		            <div class='front'>
 		                <header>
-		                    <img src='../images/creepy-cat.jpg' alt='product img' />
+		                    <img src='<?php echo $product->image?>' alt='product img' />
 		                </header>
-		                <h3>Product Name</h3>
-		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		                <h3>$product->name</h3>
+		                <p>$product->des</p>
+		                <p>bought quantity: {$purchases[$i]->quantity}</p>
 		            </div>
 		        </div>";
 	    	}

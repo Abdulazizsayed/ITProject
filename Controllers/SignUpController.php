@@ -16,8 +16,7 @@ include "../Models/User.php";
         $user->password = $password;
         $user->name = $username;
         $user->image = getFileDestination($_FILES['file']);
-        $user->save();
-        $_SESSION["user"]=$user;
+        $_SESSION["user"]=$user->save();
         header("Location: http://localhost:8080/PHPWork/ITProject/Views/HomeView.php");
     }
 

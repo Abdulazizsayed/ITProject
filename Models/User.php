@@ -29,7 +29,7 @@ class User
                 $user->name=$row["name"];
                 $user->email=$row["email"];
                 $user->image=$row["image"];
-                $user->id=$row["id"];
+                $user->id=$row["ID"];
                 $found=true;
             }
         }
@@ -45,8 +45,8 @@ class User
     }
     public function save(){
         $con = Connection::connect();
-
         $sql = "INSERT INTO users(`name`, `password`, `email`, `image`) VALUES('".$this->name."', '".$this->password."', '".$this->email."', '".$this->image."')";
         mysqli_query($con, $sql);
+        return self::Login($this->email,$this->password);
     }
 }

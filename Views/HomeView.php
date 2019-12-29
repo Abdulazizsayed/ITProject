@@ -13,7 +13,7 @@
 		}
 	}*/
 
-	include "../Models/User.php";
+	include_once "../Models/User.php";
 	session_start();
 
 	if(isset($_GET['loggedOut'])){
@@ -62,10 +62,10 @@
 											</span>
 										</li>
 										<li class='active'><a href='#'>Home</a></li>
-										<li><a href='#'>My profile</a></li>
+										<li><a href='http://localhost/ITProject-master/Views/ProfileView.php'>My profile</a></li>
 									";
-							}else{echo "<li><a href='http://localhost:8080/PHPWork/ITProject/Views/SignUpView.php'><button class='btn btn-primary'>Sign Up</button></a></li>
-									<li><a href='http://localhost:8080/PHPWork/ITProject/Views/LoginView.php'><button class='btn btn-success'>Login</button></a></li>";
+							}else{echo "<li><a href='http://localhost/ITProject-master/Views/SignUpView.php'><button class='btn btn-primary'>Sign Up</button></a></li>
+									<li><a href='http://localhost/ITProject-master/Views/LoginView.php'><button class='btn btn-success'>Login</button></a></li>";
 								}
 						?>
 					</ul>
@@ -83,16 +83,21 @@
 
 		<div class="container">
 			<h1>Our products</h1>
-			<?php 
-
-			for($i = 0 ; $i<6 ; $i++){
+			<?php
+            include "../Models/Product.php";
+            $products=Product::getAllProducts();
+			for($i = 0 ; $i<sizeof($products) ; $i++){
+			    $product=$products[$i];
+			    // don't show products with no quantity
+			    if($product->quantity==0)continue;
 				echo "<div class='card'>
 		            <div class='front'>
 		                <header>
-		                    <img src='../images/creepy-cat.jpg' alt='product img' />
+		                    <img src='<?php echo $product->image ?>' alt='product img' />
 		                </header>
-		                <h3>Product Name</h3>
-		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		                <h3>$product->name</h3>
+		                <p>$product->des</p>
+		                <p>available quantity:$product->quantity</p>
 		            </div>
 		            <div class='back'>
 		            	<form method='post'>
@@ -106,7 +111,6 @@
 	    	}
 	        ?>
 	        <div class="clearfix"></div>
-            <a onclick="getMore()" id="getMore">load more</a>
 
 		</div>
 
@@ -115,29 +119,5 @@
 				&copy; Copyright reserved.
 			</div>
 		</div>
-
-<script>
-    function getMore() {
-        for(var i=0 ; i<10 ; i++){
-            $("#cont").append("<div class='card'>           " +
-                " <div class='front'>              " +
-                "  <header>                  " +
-                "  <img src='../images/creepy-cat.jpg' alt='product img' />     " +
-                "           </header>            " +
-                "    <h3>Product Name</h3>        " +
-                "        <p>Lorem ipsum dolor sit amet, " +
-                "consectetur adipiscing elit, sed do" +
-                " eiusmod tempor incididunt ut labore" +
-                " et dolore magna aliqua.</p>" +
-                "            </div>      " +
-                "      <div class='back'>    " +
-                "          <button class='btn btn-success'>Buy</button>" +
-                "           </div> " +
-                "  </div>");
-        }
-        $("#getMore").hide();
-    }
-</script>
-
 </body>
 </html>

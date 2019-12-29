@@ -5,7 +5,7 @@
  * Date: 12/29/19
  * Time: 4:32 AM
  */
-include 'Connection.php';
+include_once 'Connection.php';
 class Purchase
 {
     public $userId;

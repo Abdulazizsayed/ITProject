@@ -5,7 +5,7 @@
  * Date: 12/29/19
  * Time: 4:32 AM
  */
-include 'Connection.php';
+include_once 'Connection.php';
 
 class Product
 {
@@ -21,6 +21,7 @@ class Product
                 values('$this->name','$this->des',$this->quantity,
                 $this->price,'$this->image')";
         $link->query($qry);
+
     }
     public function update(){
         $link=Connection::connect();
@@ -36,11 +37,28 @@ class Product
         $qry="delete from products where id=$this->id";
         $link->query($qry);
     }
+    public static function getProductById($id){
+        $link = Connection::connect();
+        $query="select * from products where id='".$id."'";
+        $data=mysqli_query($link,$query);
+        $found=false;
+        $product=new Product();
+        $product->id=$id;
+        while($row = mysqli_fetch_array($data)) {
+            $product->quantity=$row['quantity'];
+            $product->price=$row['price'];
+            $product->image=$row['image'];
+            $product->name=$row['name'];
+            $product->des=$row['des'];
+        }
+        return $product;
+    }
     public static function getAllProducts(){
         $res=array();
         $link=Connection::connect();
         $qry="select * from products";
         $data=mysqli_query($link,$qry);
+
         while($row=mysqli_fetch_array($data)){
             $product=new Product();
             $product->quantity=$row['quantity'];
@@ -48,7 +66,7 @@ class Product
             $product->image=$row['image'];
             $product->des=$row['des'];
             $product->price=$row['price'];
-            $product->id=$row['id'];
+            $product->id=$row['ID'];
             array_push($res,$product);
         }
         return $res;
