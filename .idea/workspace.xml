@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="258b6755-a84e-4e46-b613-312707362b26" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/SignUpConroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/SignUpConroller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Connection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/HomeView.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/HomeView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/LoginView.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/LoginView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/SignUpView.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/SignUpView.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,78 +31,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UpdateProductsView.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/UpdateProductsView.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-268" />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Image.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models/Image.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="HomeView.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/HomeView.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2044">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginView.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/LoginView.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controllers/LoginController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="84" lean-forward="true" selection-start-line="5" selection-start-column="84" selection-end-line="5" selection-end-column="84" />
+            <state relative-caret-position="48">
+              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            <state relative-caret-position="96">
+              <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileView.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/ProfileView.php">
+      <file leaf-file-name="file.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ITtask2/file.php">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="SignUpView.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/SignUpView.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="SignUpConroller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controllers/SignUpConroller.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-52" />
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="Connection.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models/Connection.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignUpView.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/SignUpView.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -125,11 +101,11 @@
         <option value="$PROJECT_DIR$/Views/profile.php" />
         <option value="$PROJECT_DIR$/Views/signup.php" />
         <option value="$PROJECT_DIR$/Views/updateProducts.php" />
-        <option value="$PROJECT_DIR$/Models/Connection.php" />
         <option value="$PROJECT_DIR$/Views/HomeView.php" />
-        <option value="$PROJECT_DIR$/Controllers/LoginController.php" />
         <option value="$PROJECT_DIR$/Views/LoginView.php" />
+        <option value="$PROJECT_DIR$/Models/Connection.php" />
         <option value="$PROJECT_DIR$/Models/User.php" />
+        <option value="$PROJECT_DIR$/Controllers/LoginController.php" />
       </list>
     </option>
   </component>
@@ -185,7 +161,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ITtask2/file.php" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -220,12 +196,12 @@
       <option name="presentableId" value="Default" />
       <updated>1577565682570</updated>
       <workItem from="1577565684634" duration="237000" />
-      <workItem from="1577573347206" duration="5372000" />
+      <workItem from="1577573347206" duration="8025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5609000" />
+    <option name="totallyTimeSpent" value="8262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="741" extended-state="0" />
@@ -240,7 +216,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3284553" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3495935" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -273,23 +249,10 @@
     <entry file="file://$PROJECT_DIR$/Views/ProfileView.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/SignUpConroller.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/SignUpView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/UpdateProductsView.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-268" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/Image.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/HomeView.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -298,31 +261,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/LoginController.php">
+    <entry file="file://$PROJECT_DIR$/Views/LoginView.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Image.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uplodedImages5e07f0f2a71a34.70628838.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uplodedImages5e07f01c6f0db8.65584164.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uplodedImages5e07f04f22d0e2.06276424.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uplodedImages5e07f156d8ed40.08123208.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uplodedImages5e07f1922b1c09.49212224.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signup.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/SignUpView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="84" lean-forward="true" selection-start-line="5" selection-start-column="84" selection-end-line="5" selection-end-column="84" />
+        <state relative-caret-position="356">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/LoginView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/../ITtask2/file.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Models/Connection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/SignUpConroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Models/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        <state relative-caret-position="96">
+          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
         </state>
       </provider>
     </entry>
