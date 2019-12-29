@@ -28,7 +28,6 @@ class Product
          , des='$this->des'
          ,quantity=$this->quantity
          ,price=$this->price
-         ,image='$this->image')
           where id=$this->id";
         $link->query($qry);
     }
