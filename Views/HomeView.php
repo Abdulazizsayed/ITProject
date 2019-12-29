@@ -112,6 +112,13 @@
 		}
 
 		.card .front p{
+
+		.card .front p{
+		    width: 90%;
+		    margin: 30px auto;
+		}
+
+		.card .front p{
 		    color: #777;
 		}
 
