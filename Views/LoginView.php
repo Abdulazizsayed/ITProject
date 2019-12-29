@@ -21,7 +21,7 @@
 		<input name="password" type="password" placeholder="Enter Password..."></textarea><br>
 		<button>Login</button>
 
-        <?php if(isset($_GET['error']))echo 'wrong email or password'?>
+        <?php if(isset($_GET['error']))echo '<p style="color:red;display:inline">wrong email or password</p>'?>
     </form>
 </body>
 </html>

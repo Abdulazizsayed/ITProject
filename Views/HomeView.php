@@ -12,6 +12,9 @@
 			header("location:main.php?page=login");
 		}
 	}*/
+
+	include "../Models/User.php";
+	session_start();
 ?>
 
 <!--<ul class="nav navbar-nav"> navbar
@@ -43,8 +46,17 @@
 						<span class="navbar-brand">ASA</span>
 					</div>
 					<ul class="nav navbar-nav">
-						<li><a href="#"><button class="btn btn-primary">Sign Up</button></a></li>
-						<li><a href="#"><button class="btn btn-success">Login</button></a></li>
+						<?php 
+							if(isset($_SESSION['user'])){
+								echo "
+										<li><span style='font-size:20px;color:#FFF;position:absolute;left:-60px'>Hello ".$_SESSION['user']->name."</li>
+										<li class='active'><a href='#'>Home</a></li>
+										<li><a href='#'>My profile</a></li>
+									";
+							}else{echo "<li><a href='#'><button class='btn btn-primary'>Sign Up</button></a></li>
+									<li><a href='#'><button class='btn btn-success'>Login</button></a></li>";
+								}
+						?>
 					</ul>
 					<div class="clearfix"></div>
 				</div>
@@ -85,8 +97,8 @@
 
 		<div class="footer">
 			<div class="container">
-			&copy; Copyright reserved.
-		</div>
+				&copy; Copyright reserved.
+			</div>
 		</div>
 
 <script>
