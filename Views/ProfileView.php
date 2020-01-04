@@ -19,6 +19,7 @@
 <?php
 include '../Models/User.php';
 session_start();
+$img = $_SESSION['user']->image;
 ?>
 	<div class="navbar navbar-inverse">
 			<div class="container-fluid">
@@ -28,7 +29,7 @@ session_start();
 					</div>
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="http://localhost:8080/PHPWork/ITProject/Views/HomeView.php">Home</a></li>
-						<li><a href="#">My profile</a></li>
+						<li><a href="http://localhost:8080/PHPWork/ITProject/Views/ProfileView.php">My profile</a></li>
 					</ul>
 					<div class="clearfix"></div>
 				</div>
@@ -38,7 +39,7 @@ session_start();
 		<div class="user-details">
 			<div class="container">
 				<div class="img">
-					<img src='<?php echo($_SESSION["user"]->image) ?>' alt="profile photo" />
+					<img src=<?php echo $img; ?> alt="profile photo" />
 				</div>
 				<h1><?php echo $_SESSION["user"]->name?></h1>
 			</div>

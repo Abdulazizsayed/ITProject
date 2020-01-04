@@ -75,18 +75,32 @@
 	<title>add new product</title>
 </head>
 <body>
-	<form class="form" action="http://localhost:8080/PHPWork/ITProject/Controllers/LoginController.php" method="post">
+	<form class="form" action="http://localhost:8080/PHPWork/ITProject/Controllers/AddProductController.php" method="post" onsubmit="return validation()">
 		<span>Product name:</span><br>
-		<input name="name" placeholder="Enter name..."><br>
+		<input id="pName" name="name" placeholder="Enter name..."><br>
         <span>Description:</span><br>
-		<textarea name="des" placeholder="Enter Description..."></textarea><br>
+		<textarea id="desc" name="des" placeholder="Enter Description..."></textarea><br>
 		<span>Quantity:</span><br>
-		<input name="quantity" type="number" placeholder="Enter quantity..."><br>
+		<input id="q" name="quantity" type="number" placeholder="Enter quantity..."><br>
 		<span>Price:</span><br>
-		<input name="price" type="number" placeholder="Enter price..."><br>
-		<span>Image:</span><br>
-		<input name="image" type="file"><br>
+		<input id="price" name="price" type="number" placeholder="Enter price..."><br>
 		<button>Add</button>
     </form>
+    <script type="text/javascript">
+    	function validation(){
+    		var pname = document.getElementById('pName').value;
+    		var desc = document.getElementById('desc').value;
+    		var q = document.getElementById('q').value;
+    		var price = document.getElementById('price').value;
+
+    		if(pname == ""){
+    			alert("you should enter product name.");
+    		}else if(q == ""){
+    			alert("you should enter quantity.");
+    		}else if(price == ""){
+    			alert("you should enter price.");
+    		}
+    	}
+    </script>
 </body>
 </html>

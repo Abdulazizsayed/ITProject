@@ -98,14 +98,26 @@
 	<title>signup</title>
 </head>
 <body>
-	<form class="form" action="http://localhost:8080/PHPWork/ITProject/Controllers/LoginController.php" method="post">
+	<form class="form" action="http://localhost:8080/PHPWork/ITProject/Controllers/LoginController.php" method="post" onsubmit="return validation()">
 		<span>Email:</span><br>
-		<input name="email" placeholder="Enter Email..."><br>
+		<input id="email" name="email" placeholder="Enter Email..."><br>
         <span>Password:</span><br>
-		<input name="password" type="password" placeholder="Enter Password..."><br>
+		<input id="password" name="password" type="password" placeholder="Enter Password..."><br>
 		<button>Login</button>
 
         <?php if(isset($_GET['error']))echo '<p style="color:red;display:inline">wrong email or password</p>'?>
     </form>
+
+    <script type="text/javascript">
+    	function validation(){
+    		var email = document.getElementById('email').value;
+    		var password = document.getElementById('password').value;
+
+    		if(email == ""){
+    			alert("you should enter email.");
+    		}else if(password == ""){
+    			alert("you should enter password.");
+    	}
+    </script>
 </body>
 </html>

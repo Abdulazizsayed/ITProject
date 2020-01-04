@@ -192,8 +192,8 @@
 												</a>
 											</span>
 										</li>
-										<li class='active'><a href='#'>Home</a></li>
-										<li><a href='http://localhost:8080/PHPWork/ITProject/Views/Views/ProfileView.php'>My profile</a></li>
+										<li class='active'><a href='http://localhost:8080/PHPWork/ITProject/Views/HomeView'>Home</a></li>
+										<li><a href='http://localhost:8080/PHPWork/ITProject/Views/ProfileView.php'>My profile</a></li>
 									";
 							}else{echo "<li><a href='http://localhost:8080/PHPWork/ITProject/Views/SignUpView.php'><button class='btn btn-primary'>Sign Up</button></a></li>
 									<li><a href='http://localhost:8080/PHPWork/ITProject/Views/LoginView.php'><button class='btn btn-success'>Login</button></a></li>";

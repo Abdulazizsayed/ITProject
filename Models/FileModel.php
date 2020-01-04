@@ -15,17 +15,20 @@ function getFileDestination($file){
 		if($fileError === 0){
 			if($fileSize < 1000000){
 				$fileNameNew = uniqid('', true).'.'.$fileActualExt;
-				$fileDestination = '../uplodedImages/'.$fileNameNew;
+				$fileDestination = '../uploadedImages/'.$fileNameNew;
 				move_uploaded_file($fileTmpName, $fileDestination);
 				return $fileDestination;
 			}else{
-                header("Location: http://localhost/ITProject-master/Views/SignUpView.php?errorUploading=1");
+				die(1);
+                header("Location: http://localhost:8080/PHPWork/ITProject/Views/SignUpView.php?errorUploading=1");
             }
 		}else{
-            header("Location: http://localhost/ITProject-master/Views/SignUpView.php?errorUploading=1");
+			die(2);
+            header("Location: http://localhost:8080/PHPWork/ITProject/Views/SignUpView.php?errorUploading=1");
 		}
 	}else{
-        header("Location: http://localhost/ITProject-master/Views/SignUpView.php?errorUploading=1");
+		die(3);
+        header("Location: http://localhost:8080/PHPWork/ITProject/Views/SignUpView.php?errorUploading=1");
 	}
 }
 

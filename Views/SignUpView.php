@@ -96,18 +96,37 @@
 	<title>signup</title>
 </head>
 <body>
-	<form class="form" action="http://localhost:8080/PHPWork/ITProject/Controllers/SignUpConroller.php" method="Post" enctype="multipart/form-data">
+	<form class="form" action="http://localhost:8080/PHPWork/ITProject/Controllers/SignUpController.php" method="Post" enctype="multipart/form-data" onsubmit="return validation()">
 		<span>Username:</span><br>
-		<input name="username" placeholder="Enter Username..."><br>
+		<input id="username" name="username" placeholder="Enter Username..."><br>
 		<span>Password:</span><br>
-		<input name="password" type="password" placeholder="Enter Password..."><br>
+		<input id="password" name="password" type="password" placeholder="Enter Password..."><br>
 		<span>Email:</span><br>
         <?php if(isset($_GET['emailExist']))echo '<p style="color:red">email already exists</p>'?>
-		<input name="email" type="email" placeholder="Enter Email..."><br>
+		<input id="email" name="email" type="email" placeholder="Enter Email..."><br>
         <span>Profile image:</span><br>
-		<input name="file" type="file"><br>
+		<input id="image" name="file" type="file"><br>
         <?php if(isset($_GET['errorUploading']))echo '<p style="color:red">error with uploading the file</p>'?>
         <button type="submit" name="submit">Sign Up</button>
 	</form>
+	
+	<script type="text/javascript">
+    	function validation(){
+    		var username = document.getElementById('username').value;
+    		var password = document.getElementById('password').value;
+    		var email = document.getElementById('email').value;
+    		var image = document.getElementById('image').value;
+
+    		if(username == ""){
+    			alert("you should enter username.");
+    		}else if(password == ""){
+    			alert("you should enter password.");
+    		}else if(email == ""){
+    			alert("you should enter email.");
+    		}else if(image == ""){
+    			alert("you should enter profile image.");
+    		}
+    	}
+    </script>
 </body>
 </html>

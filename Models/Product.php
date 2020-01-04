@@ -34,6 +34,9 @@ class Product
     }
     public function delete(){
         $link=Connection::connect();
+        // before deleting products we need to delete its purchases
+        $qry="delete from purchases where productId=$this->id";
+        $link->query($qry);
         $qry="delete from products where id=$this->id";
         $link->query($qry);
     }
