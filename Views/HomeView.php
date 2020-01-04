@@ -217,6 +217,9 @@
 			<?php
             include "../Models/Product.php";
             $products=Product::getAllProducts();
+            if(sizeof($products) == 0){
+            	echo "<h2 style='text-align:center;'>We have no products at the moment</h2> ";
+            }
 			for($i = 0 ; $i<sizeof($products) ; $i++){
 			    $product=$products[$i];
 			    // don't show products with no quantity

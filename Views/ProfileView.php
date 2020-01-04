@@ -53,6 +53,9 @@ $img = $_SESSION['user']->image;
             include_once '../Models/Purchase.php';
             include_once '../Models/Product.php';
             $purchases=Purchase::getPurchasesForUser($_SESSION['user']->id);
+            if(sizeof($purchases) == 0){
+            	echo "<h2 style='text-align:center;'>You have no products yet</h2> ";
+            }
 			for($i = 0 ; $i<sizeof($purchases) ; $i++){
 			    $product=Product::getProductById($purchases[$i]->productId);
 				echo "<div class='card'>
